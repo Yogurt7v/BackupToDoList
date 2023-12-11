@@ -88,7 +88,13 @@ function App() {
       <button className="searchButton" onClick={visible}>
         Search
       </button>
-      <Search todoList={todoList} searchVisble={searchVisble}></Search>
+      <Search
+        todoList={todoList}
+        setTodoList={setTodoList}
+        prevTodo={prevTodo}
+        setPrevTodo={setPrevTodo}
+        searchVisble={searchVisble}
+      ></Search>
       {isLoading ? (
         <div className="loaderWrapper">
           <div class="loader"></div>
