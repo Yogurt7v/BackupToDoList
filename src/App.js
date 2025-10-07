@@ -22,7 +22,6 @@ function App() {
 
     return onValue(todoListRef, (snapshot) => {
       const data = snapshot.val() || {};
-      // console.log(Object.values(data));
       setTodoList(data);
       setIsLoading(false);
     });
