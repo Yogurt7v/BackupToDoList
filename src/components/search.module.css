@@ -17,9 +17,20 @@
 .buttonWrapper {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .btn {
-  width: 150px;
+  width: 160px;
+  border: 0.5px solid #5986db;
+  border-radius: 8px;
+  background-color: #5986db;
+  color: white;
+  padding: 10px 14px;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #185bd6;
+  box-shadow: 0 8px 24px rgba(89, 134, 219, 0.35);
 }

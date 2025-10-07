@@ -82,10 +82,10 @@ function App() {
       <h1>To Do List</h1>
       <AddPost create={create} />
       <button className="sortButton" onClick={sort} ref={r}>
-        Sort
+        Сортировать
       </button>
       <button className="searchButton" onClick={visible}>
-        Search
+        Искать
       </button>
       <Search
         todoList={todoList}
@@ -96,7 +96,7 @@ function App() {
       ></Search>
       {isLoading ? (
         <div className="loaderWrapper">
-          <div class="loader"></div>
+          <div className="loader"></div>
         </div>
       ) : (
         Object.values(todoList).map((todo, index) => (

@@ -43,7 +43,7 @@ export const Search = ({todoList, setTodoList, searchVisble}) => {
 			{searchVisble === true? <div className={style.text}>{message}</div> : ""}
 			{searchVisble === true ? (
 			<>
-				<input type="text" ref={input} className={style.input} placeholder="What task are we looking for?" onChange={startSearch}/>
+				<input type="text" ref={input} className={style.input} placeholder="Что ищем?" onChange={startSearch}/>
 				<div className={style.buttonWrapper}>
 					<button className={style.btn} onClick={letsSearch}>Искать</button>
 					<button className={style.btn} onClick={clearSearchInput}>Очистить поиск</button>
